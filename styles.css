@@ -416,32 +416,95 @@ h1, h2, h3, h4, h5, h6 {
     padding: 80px 0;
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+.gallery-carousel {
     margin-top: 3rem;
+    position: relative;
 }
 
-.gallery-item {
-    background: var(--white);
-    border-radius: var(--border-radius);
+.carousel-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
     overflow: hidden;
+    border-radius: var(--border-radius);
     box-shadow: var(--shadow);
-    transition: var(--transition);
     border: 3px solid var(--primary-color);
+    background: var(--white);
 }
 
-.gallery-item:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-hover);
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.gallery-slide {
+    min-width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.gallery-slide.active {
+    opacity: 1;
 }
 
 .gallery-photo {
     width: 100%;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
     display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(244, 166, 205, 0.9);
+    color: var(--white);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: var(--transition);
+    z-index: 2;
+}
+
+.carousel-btn:hover {
+    background: var(--primary-color);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev-btn {
+    left: 15px;
+}
+
+.next-btn {
+    right: 15px;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(244, 166, 205, 0.5);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.dot.active {
+    background: var(--primary-color);
+    transform: scale(1.2);
 }
 
 /* Book Now Section */
@@ -712,9 +775,12 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: repeat(2, 1fr);
     }
     
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
+    .carousel-container {
+        max-width: 90%;
+    }
+    
+    .gallery-photo {
+        height: 350px;
     }
     
     .contact-grid {
@@ -763,9 +829,18 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: 1fr;
     }
     
-    .gallery-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+    .carousel-container {
+        max-width: 95%;
+    }
+    
+    .gallery-photo {
+        height: 300px;
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
     }
     
     .service-card {
