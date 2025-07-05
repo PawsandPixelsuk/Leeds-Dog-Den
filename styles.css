@@ -322,13 +322,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-images {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1.5rem;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .about-image-frame {
-    width: 560px;
+    width: 260px;
     height: auto;
     background: var(--white);
     border-radius: var(--border-radius);
@@ -650,11 +652,13 @@ h1, h2, h3, h4, h5, h6 {
     
     .about-images {
         order: -1;
+        flex-direction: column;
+        align-items: center;
     }
     
     .about-image-frame {
         width: 100%;
-        max-width: 480px;
+        max-width: 320px;
         height: auto;
     }
     
