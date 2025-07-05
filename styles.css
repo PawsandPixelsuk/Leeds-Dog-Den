@@ -433,18 +433,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .carousel-track {
-    display: flex;
-    transition: transform 0.5s ease;
+    position: relative;
+    width: 100%;
+    height: 400px;
 }
 
 .gallery-slide {
-    min-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    visibility: hidden;
+    transition: all 0.5s ease;
 }
 
 .gallery-slide.active {
     opacity: 1;
+    visibility: visible;
 }
 
 .gallery-photo {
@@ -779,6 +786,10 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 90%;
     }
     
+    .carousel-track {
+        height: 350px;
+    }
+    
     .gallery-photo {
         height: 350px;
     }
@@ -831,6 +842,10 @@ h1, h2, h3, h4, h5, h6 {
     
     .carousel-container {
         max-width: 95%;
+    }
+    
+    .carousel-track {
+        height: 300px;
     }
     
     .gallery-photo {
