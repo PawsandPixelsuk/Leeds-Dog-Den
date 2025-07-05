@@ -332,8 +332,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-image-frame {
     flex: 1;
-    max-width: 320px;
-    min-width: 280px;
+    max-width: 416px;
+    min-width: 364px;
     height: auto;
     background: var(--white);
     border-radius: var(--border-radius);
