@@ -91,8 +91,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-image {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -177,10 +177,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    max-width: 800px;
 }
 
 .hero-logo {
@@ -189,8 +190,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-logo-image {
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: var(--shadow);
@@ -616,8 +617,8 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .hero .container {
-        grid-template-columns: 1fr;
-        gap: 3rem;
+        flex-direction: column;
+        gap: 2rem;
         text-align: center;
     }
     
@@ -626,15 +627,11 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .hero-logo-image {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
     
-    .hero-placeholder {
-        width: 250px;
-        height: 250px;
-        font-size: 4rem;
-    }
+
     
     .about-content {
         grid-template-columns: 1fr;
@@ -687,8 +684,8 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .hero-logo-image {
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 120px;
     }
     
     .section-title {
