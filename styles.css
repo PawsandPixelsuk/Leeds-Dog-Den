@@ -330,6 +330,17 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
+.about-images-mobile {
+    display: none;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 2rem 0;
+}
+
 .about-image-frame {
     flex: 1;
     max-width: 352px;
@@ -654,14 +665,20 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .about-images {
-        order: -1;
-        flex-direction: column;
-        align-items: center;
+        display: none;
     }
     
-    .about-image-frame {
+    .about-images-mobile {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin: 1.5rem 0;
+    }
+    
+    .about-images-mobile .about-image-frame {
         width: 100%;
-        max-width: 320px;
+        max-width: 45%;
+        min-width: auto;
         height: auto;
     }
     
