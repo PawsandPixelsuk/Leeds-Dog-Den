@@ -325,12 +325,15 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
     gap: 1.5rem;
     align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
 }
 
 .about-image-frame {
-    width: 380px;
+    flex: 1;
+    max-width: 320px;
+    min-width: 280px;
     height: auto;
     background: var(--white);
     border-radius: var(--border-radius);
