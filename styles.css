@@ -704,7 +704,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .designed-by-image {
-    max-width: 250px;
+    max-width: 120px;
     width: 100%;
     height: auto;
     opacity: 0.8;
@@ -912,7 +912,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .designed-by-image {
-        max-width: 200px;
+        max-width: 100px;
     }
 }
 
