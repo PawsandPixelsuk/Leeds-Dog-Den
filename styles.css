@@ -664,7 +664,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0.3rem;
 }
 
 .footer-logo {
@@ -700,7 +700,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0.5rem 0;
+    margin: 0.2rem 0;
 }
 
 .designed-by-image {
