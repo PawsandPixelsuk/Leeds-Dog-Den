@@ -1,8 +1,8 @@
 <svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="attrGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#f4a6cd;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#f5deb3;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#95a5a6;stop-opacity:1" />
     </linearGradient>
   </defs>
   
@@ -10,16 +10,16 @@
   
   <!-- Paw print -->
   <g transform="translate(30, 30)">
-    <ellipse cx="0" cy="5" rx="8" ry="6" fill="#ffffff" opacity="0.9"/>
-    <ellipse cx="-6" cy="-5" rx="4" ry="5" fill="#ffffff" opacity="0.9"/>
-    <ellipse cx="-2" cy="-8" rx="3" ry="4" fill="#ffffff" opacity="0.9"/>
-    <ellipse cx="2" cy="-8" rx="3" ry="4" fill="#ffffff" opacity="0.9"/>
-    <ellipse cx="6" cy="-5" rx="4" ry="5" fill="#ffffff" opacity="0.9"/>
+    <ellipse cx="0" cy="5" rx="8" ry="6" fill="#ffffff" opacity="0.95"/>
+    <ellipse cx="-6" cy="-5" rx="4" ry="5" fill="#ffffff" opacity="0.95"/>
+    <ellipse cx="-2" cy="-8" rx="3" ry="4" fill="#ffffff" opacity="0.95"/>
+    <ellipse cx="2" cy="-8" rx="3" ry="4" fill="#ffffff" opacity="0.95"/>
+    <ellipse cx="6" cy="-5" rx="4" ry="5" fill="#ffffff" opacity="0.95"/>
   </g>
   
   <text x="60" y="25" font-family="Poppins, sans-serif" font-size="14" font-weight="600" fill="#ffffff">Site Demo by</text>
   <text x="60" y="42" font-family="Poppins, sans-serif" font-size="16" font-weight="700" fill="#ffffff">Paws &amp; Pixels</text>
   
-  <text x="270" y="30" text-anchor="end" font-family="Poppins, sans-serif" font-size="12" font-weight="500" fill="#ffffff">Customizable</text>
+  <text x="270" y="30" text-anchor="end" font-family="Poppins, sans-serif" font-size="12" font-weight="500" fill="#ffffff">Customisable</text>
   <text x="270" y="45" text-anchor="end" font-family="Poppins, sans-serif" font-size="12" font-weight="500" fill="#ffffff">Template</text>
 </svg>

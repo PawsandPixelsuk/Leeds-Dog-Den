@@ -1,0 +1,59 @@
+I’ve duplicated my Dani’s Dogs site and want to convert it into a clean, reusable template for any service-based pet business (e.g. groomers, dog walkers, trainers).
+
+Use the existing layout but apply the following changes:
+
+---
+
+🔧 STRUCTURE & DESIGN UPDATES
+
+1. Remove all Dani’s Dogs-specific text, branding, and pink tones.
+2. Update the colour palette to:
+   - Soft cream or white background
+   - Light greys and muted pastels (avoid heavy pinks)
+   - Clean black or dark grey text for readability
+3. Tidy up spacing:
+   - Consistent padding between all sections
+   - Mobile-friendly formatting (especially hero section and footer)
+4. Add subtle soft-circle background styling (like Leonardo AI-style) in black/grey/white tones behind key sections.
+
+---
+
+📋 CONTENT & COPY CHANGES
+
+1. **Hero Section**
+   - Heading: `Your Pet Business – Premium [Service]`
+   - Subheading: `Lovingly caring for your pets in [Location]`
+   - CTA button: `Book Now` or `Get a Free Quote`
+   - Optional secondary CTA: `See Prices`
+
+2. **Benefits Section**
+   - “Stress-free grooming experience” 🪶  
+   - “Natural, pet-safe products” 🧼  
+   - “Flexible, walk-in appointments” ⏰  
+   - Include simple icons and keep layout clean
+
+3. **Services Snapshot**
+   - 3–4 core services, short and punchy descriptions
+   - Same visual style as existing Dani’s Dogs layout
+
+4. **About Section**
+   - Generic bio: “We’re passionate pet lovers offering top-quality care and friendly service for every furry client.”
+
+5. **Gallery / My Work**
+   - Keep layout from Dani’s Dogs
+   - Keep image containers and lightbox if present
+
+6. **Contact Section**
+   - Leave layout as-is, update to generic contact details for demo use
+
+7. **Footer**
+   - Add line: `Demo site by Paws & Pixels – Customisable for your pet business`
+   - Ensure footer has minimal spacing (as you already tweaked)
+
+---
+
+💡 Final task:
+- Clean up unused files and CSS
+- Add clear comments above each major section for easy editing in future
+
+End goal: A polished, ready-to-clone service-based template that can be repurposed in minutes with new text, branding, and images.

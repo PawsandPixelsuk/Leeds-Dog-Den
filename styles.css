@@ -16,21 +16,23 @@ CUSTOMIZATION GUIDE:
 /* CSS Custom Properties for consistent theming */
 :root {
     /* 
-    MAIN COLORS - Customize these to match your brand:
+    MAIN COLORS - Clean, professional palette:
     */
-    --primary-color: #f4a6cd; /* Main brand color (buttons, accents) */
-    --secondary-color: #faf0e6; /* Background color for sections */
-    --accent-color: #f5deb3; /* Secondary accent color */
-    --text-dark: #4a4a4a; /* Main text color */
-    --text-light: #6b6b6b; /* Lighter text for descriptions */
-    --white: #ffffff; /* White backgrounds */
+    --primary-color: #2c3e50; /* Dark blue-grey for buttons and accents */
+    --secondary-color: #f8f9fa; /* Soft cream/white background */
+    --accent-color: #95a5a6; /* Muted grey accent */
+    --text-dark: #2c3e50; /* Dark text for readability */
+    --text-light: #6c757d; /* Medium grey for descriptions */
+    --white: #ffffff; /* Pure white backgrounds */
+    --light-grey: #ecf0f1; /* Very light grey */
+    --medium-grey: #bdc3c7; /* Medium grey for borders */
     
     /* 
     SHADOWS AND EFFECTS:
     */
-    --shadow: 0 4px 20px rgba(244, 166, 205, 0.15);
-    --shadow-hover: 0 8px 30px rgba(244, 166, 205, 0.25);
-    --border-radius: 15px;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+    --border-radius: 12px;
     --transition: all 0.3s ease;
 }
 
@@ -51,6 +53,40 @@ body {
     color: var(--text-dark);
     background-color: var(--white);
     overflow-x: hidden;
+    position: relative;
+}
+
+/* Soft Circular Background Elements */
+body::before,
+body::after {
+    content: '';
+    position: fixed;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--light-grey) 0%, var(--secondary-color) 100%);
+    opacity: 0.4;
+    z-index: -1;
+    pointer-events: none;
+}
+
+body::before {
+    width: 600px;
+    height: 600px;
+    top: -300px;
+    right: -300px;
+    animation: float 20s ease-in-out infinite;
+}
+
+body::after {
+    width: 400px;
+    height: 400px;
+    bottom: -200px;
+    left: -200px;
+    animation: float 25s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
 }
 
 /* Container */
@@ -193,8 +229,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section */
 .hero {
-    padding: 140px 0 80px;
-    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+    padding: 140px 0 100px;
+    background: linear-gradient(135deg, var(--white) 0%, var(--secondary-color) 100%);
     min-height: 90vh;
     display: flex;
     align-items: center;
@@ -278,8 +314,16 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--white);
 }
 
+/* Hero Buttons Container */
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .cta-button.primary:hover {
-    background: #e891bb;
+    background: #1a252f;
     transform: translateY(-2px);
     box-shadow: var(--shadow-hover);
 }
@@ -300,43 +344,72 @@ h1, h2, h3, h4, h5, h6 {
 /* About Section */
 .about {
     padding: 100px 0;
-    background: var(--white);
+    background: var(--secondary-color);
+    position: relative;
 }
 
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5rem;
-    align-items: center;
+    align-items: start;
 }
 
 .about-description {
     font-size: 1.1rem;
     color: var(--text-light);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
     line-height: 1.7;
 }
 
-.about-features {
-    display: flex;
-    flex-direction: column;
+/* Benefits Grid */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
-    margin-top: 2.5rem;
 }
 
-.feature {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    background: var(--secondary-color);
+.benefit-item {
+    background: var(--white);
+    padding: 1.5rem;
     border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: var(--transition);
 }
 
-.feature i {
+.benefit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.benefit-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: var(--light-grey);
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+}
+
+.benefit-icon i {
     color: var(--primary-color);
-    font-size: 1.2rem;
-    width: 24px;
+    font-size: 1.5rem;
+}
+
+.benefit-item h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.benefit-item p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.5;
 }
 
 .feature span {
@@ -383,8 +456,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Services Section */
 .services {
-    padding: 80px 0;
-    background: var(--secondary-color);
+    padding: 100px 0;
+    background: var(--white);
 }
 
 .services-grid {
@@ -410,13 +483,13 @@ h1, h2, h3, h4, h5, h6 {
 .service-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: var(--light-grey);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 1.5rem;
-    color: var(--white);
+    color: var(--primary-color);
     font-size: 2rem;
 }
 
@@ -437,7 +510,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Gallery Section */
 .gallery {
     background: var(--secondary-color);
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
 .gallery-carousel {
@@ -452,7 +525,7 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
-    border: 3px solid var(--primary-color);
+    border: 3px solid var(--light-grey);
     background: var(--white);
 }
 
@@ -489,7 +562,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(244, 166, 205, 0.9);
+    background: rgba(44, 62, 80, 0.9);
     color: var(--white);
     border: none;
     width: 50px;
@@ -528,7 +601,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: rgba(244, 166, 205, 0.5);
+    background: var(--accent-color);
     cursor: pointer;
     transition: var(--transition);
 }
@@ -540,8 +613,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Book Now Section */
 .book-now {
-    padding: 80px 0;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    padding: 100px 0;
+    background: var(--primary-color);
     color: var(--white);
     text-align: center;
 }
@@ -608,12 +681,12 @@ h1, h2, h3, h4, h5, h6 {
 .contact-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: var(--light-grey);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--white);
+    color: var(--primary-color);
     font-size: 1.3rem;
     flex-shrink: 0;
 }
@@ -652,7 +725,7 @@ h1, h2, h3, h4, h5, h6 {
 .social-link {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    background: var(--primary-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -716,6 +789,13 @@ h1, h2, h3, h4, h5, h6 {
 .footer-text {
     opacity: 0.8;
     font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-credit {
+    opacity: 0.7;
+    font-size: 0.85rem;
+    font-style: italic;
 }
 
 .designed-by {
