@@ -306,13 +306,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero logo removed - keeping only navbar logo */
 
-.hero-title {
+.hero-title, .hero-content h1 {
     font-size: 3.5rem;
     font-weight: 700;
     color: var(--text-dark);
     margin-bottom: 2rem;
     line-height: 1.3;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.12);
 }
 
 .hero-subtitle {
@@ -1065,6 +1065,32 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 2.5rem;
     }
     
+    .hero-content {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        gap: 1.2rem;
+        text-align: center;
+    }
+    
+    /* Limit decorative elements on mobile */
+    .bubble-3, .bubble-4, .bubble-5, .bubble-6, .bubble-7, .bubble-8 {
+        display: none;
+    }
+    
+    .paw-3, .paw-4, .paw-5, .paw-6, .paw-7, .paw-8 {
+        display: none;
+    }
+    
+    /* Scale down remaining decorations */
+    .bubble-1, .bubble-2 {
+        transform: scale(0.7);
+    }
+    
+    .paw-1, .paw-2 {
+        transform: scale(0.7);
+    }
+}
+    
     /* Hero logo image removed */
     
 
@@ -1348,25 +1374,25 @@ button:focus {
     z-index: 1;
 }
 
-/* Enhanced bubble positions and sizes for better visibility */
-.bubble-1 { width: 60px; height: 60px; top: 15%; left: 8%; animation-delay: 0s; }
-.bubble-2 { width: 40px; height: 40px; top: 55%; left: 15%; animation-delay: 1.2s; }
-.bubble-3 { width: 80px; height: 80px; top: 25%; left: 75%; animation-delay: 2.4s; }
-.bubble-4 { width: 50px; height: 50px; top: 65%; left: 80%; animation-delay: 3.6s; }
-.bubble-5 { width: 30px; height: 30px; top: 35%; left: 3%; animation-delay: 4.8s; }
-.bubble-6 { width: 70px; height: 70px; top: 75%; left: 55%; animation-delay: 0.6s; }
-.bubble-7 { width: 45px; height: 45px; top: 12%; left: 55%; animation-delay: 1.8s; }
-.bubble-8 { width: 35px; height: 35px; top: 45%; left: 85%; animation-delay: 3s; }
+/* Enhanced bubble positions and sizes for better visibility - 8 total bubbles */
+.bubble-1 { width: 50px; height: 50px; top: 22%; left: 12%; animation-delay: 0s; }
+.bubble-2 { width: 35px; height: 35px; top: 62%; left: 8%; animation-delay: 2s; }
+.bubble-3 { width: 65px; height: 65px; top: 35%; left: 72%; animation-delay: 4s; }
+.bubble-4 { width: 45px; height: 45px; top: 70%; left: 78%; animation-delay: 6s; }
+.bubble-5 { width: 25px; height: 25px; top: 15%; left: 52%; animation-delay: 8s; }
+.bubble-6 { width: 55px; height: 55px; top: 80%; left: 58%; animation-delay: 1s; }
+.bubble-7 { width: 40px; height: 40px; top: 8%; left: 88%; animation-delay: 3s; }
+.bubble-8 { width: 30px; height: 30px; top: 52%; left: 92%; animation-delay: 5s; }
 
 /* Enhanced paw positions for better distribution - 8 total paws */
-.paw-1 { top: 20%; left: 10%; animation-delay: 0s; }
-.paw-2 { top: 30%; left: 70%; animation-delay: 1s; }
-.paw-3 { top: 50%; left: 5%; animation-delay: 2s; }
-.paw-4 { top: 70%; left: 20%; animation-delay: 3s; }
-.paw-5 { top: 15%; left: 80%; animation-delay: 4s; }
-.paw-6 { top: 60%; left: 75%; animation-delay: 5s; }
-.paw-7 { top: 40%; left: 25%; animation-delay: 6s; }
-.paw-8 { top: 80%; left: 45%; animation-delay: 7s; }
+.paw-1 { top: 18%; left: 8%; animation-delay: 0s; }
+.paw-2 { top: 28%; left: 68%; animation-delay: 1.5s; }
+.paw-3 { top: 45%; left: 3%; animation-delay: 3s; }
+.paw-4 { top: 65%; left: 18%; animation-delay: 4.5s; }
+.paw-5 { top: 12%; left: 78%; animation-delay: 6s; }
+.paw-6 { top: 55%; left: 72%; animation-delay: 7.5s; }
+.paw-7 { top: 35%; left: 22%; animation-delay: 9s; }
+.paw-8 { top: 75%; left: 42%; animation-delay: 10.5s; }
 
 /* Background decorations with enhanced visibility and layering */
 .bubble, .paw {
