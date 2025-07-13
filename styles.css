@@ -1200,17 +1200,17 @@ h1, h2, h3, h4, h5, h6 {
         gap: 1.25rem;
     }
     
-    /* Ensure visibility on mobile while optimizing performance */
+    /* Ensure smooth animations on mobile */
     .bubble, .paw {
-        animation-duration: 8s;
+        animation-duration: 10s;
     }
     
     .bubble {
-        opacity: 0.25 !important;
+        opacity: 0.35 !important;
     }
     
     .paw {
-        opacity: 0.35 !important;
+        opacity: 0.45 !important;
     }
     
     .carousel-container {
@@ -1377,50 +1377,52 @@ button:focus {
     box-shadow: 
         inset 0 0 20px rgba(255, 255, 255, 0.6),
         0 4px 15px rgba(149, 165, 166, 0.3);
-    animation: float 8s ease-in-out infinite;
-    opacity: 0.3 !important;
+    animation: float 12s ease-in-out infinite;
+    opacity: 0.4 !important;
     z-index: 1;
+    will-change: transform, opacity;
 }
 
 .paw {
     position: absolute;
-    color: rgba(44, 62, 80, 0.4);
+    color: rgba(44, 62, 80, 0.5);
     font-size: 24px;
-    text-shadow: 0 2px 4px rgba(44, 62, 80, 0.2);
-    animation: twinkle 10s ease-in-out infinite;
-    opacity: 0.4 !important;
+    text-shadow: 0 2px 4px rgba(44, 62, 80, 0.3);
+    animation: twinkle 15s ease-in-out infinite;
+    opacity: 0.5 !important;
     z-index: 1;
+    will-change: transform, opacity;
 }
 
-/* Enhanced bubble positions and sizes - mobile optimized for 3 total */
-.bubble-1 { width: 40px; height: 40px; top: 20%; left: 8%; animation-delay: 0s; }
-.bubble-2 { width: 30px; height: 30px; top: 55%; left: 75%; animation-delay: 3s; }
-.bubble-3 { width: 50px; height: 50px; top: 75%; left: 45%; animation-delay: 6s; }
-.bubble-4 { width: 45px; height: 45px; top: 70%; left: 78%; animation-delay: 6s; }
-.bubble-5 { width: 25px; height: 25px; top: 15%; left: 52%; animation-delay: 8s; }
-.bubble-6 { width: 55px; height: 55px; top: 80%; left: 58%; animation-delay: 1s; }
-.bubble-7 { width: 40px; height: 40px; top: 8%; left: 88%; animation-delay: 3s; }
-.bubble-8 { width: 30px; height: 30px; top: 52%; left: 92%; animation-delay: 5s; }
+/* Enhanced bubble positions - evenly distributed across mobile hero */
+.bubble-1 { width: 40px; height: 40px; top: 15%; left: 10%; animation-delay: 0s; }
+.bubble-2 { width: 30px; height: 30px; top: 50%; left: 85%; animation-delay: 3s; }
+.bubble-3 { width: 50px; height: 50px; top: 80%; left: 50%; animation-delay: 6s; }
+.bubble-4 { width: 45px; height: 45px; top: 35%; left: 25%; animation-delay: 6s; }
+.bubble-5 { width: 25px; height: 25px; top: 65%; left: 15%; animation-delay: 8s; }
+.bubble-6 { width: 55px; height: 55px; top: 25%; left: 75%; animation-delay: 1s; }
+.bubble-7 { width: 40px; height: 40px; top: 85%; left: 20%; animation-delay: 3s; }
+.bubble-8 { width: 30px; height: 30px; top: 45%; left: 60%; animation-delay: 5s; }
 
-/* Additional mobile bubbles - well spaced across hero section */
-.bubble-9 { width: 35px; height: 35px; top: 30%; left: 5%; animation-delay: 7s; }
-.bubble-10 { width: 28px; height: 28px; top: 85%; left: 15%; animation-delay: 9s; }
-.bubble-11 { width: 42px; height: 42px; top: 60%; left: 35%; animation-delay: 11s; }
-.bubble-12 { width: 38px; height: 38px; top: 10%; left: 65%; animation-delay: 13s; }
+/* Additional mobile bubbles - optimally distributed to avoid clumping */
+.bubble-9 { width: 35px; height: 35px; top: 40%; left: 90%; animation-delay: 7s; }
+.bubble-10 { width: 28px; height: 28px; top: 90%; left: 25%; animation-delay: 9s; }
+.bubble-11 { width: 42px; height: 42px; top: 25%; left: 60%; animation-delay: 11s; }
+.bubble-12 { width: 38px; height: 38px; top: 85%; left: 80%; animation-delay: 13s; }
 
-/* Enhanced paw positions for better distribution - desktop gets 8 paws to match 8 bubbles */
-.paw-1 { top: 25%; left: 15%; animation-delay: 0s; }
-.paw-2 { top: 45%; left: 70%; animation-delay: 2s; }
-.paw-3 { top: 70%; left: 20%; animation-delay: 4s; }
-.paw-4 { top: 65%; left: 85%; animation-delay: 4.5s; }
+/* Enhanced paw positions - well distributed for mobile and desktop */
+.paw-1 { top: 20%; left: 30%; animation-delay: 0s; }
+.paw-2 { top: 60%; left: 80%; animation-delay: 2s; }
+.paw-3 { top: 85%; left: 35%; animation-delay: 4s; }
+.paw-4 { top: 40%; left: 10%; animation-delay: 4.5s; }
 .paw-5 { top: 12%; left: 78%; animation-delay: 6s; }
 .paw-6 { top: 55%; left: 72%; animation-delay: 7.5s; }
-.paw-7 { top: 35%; left: 22%; animation-delay: 9s; }
-.paw-8 { top: 75%; left: 42%; animation-delay: 10.5s; }
+.paw-7 { top: 25%; left: 65%; animation-delay: 9s; }
+.paw-8 { top: 70%; left: 55%; animation-delay: 10.5s; }
 
-/* Additional mobile paws - well distributed across hero section */
-.paw-9 { top: 35%; left: 5%; animation-delay: 12s; }
-.paw-10 { top: 85%; left: 30%; animation-delay: 14s; }
+/* Additional mobile paws - well spaced to avoid any clustering */
+.paw-9 { top: 10%; left: 85%; animation-delay: 12s; }
+.paw-10 { top: 95%; left: 75%; animation-delay: 14s; }
 
 /* Background decorations with enhanced visibility and layering */
 .bubble, .paw {
@@ -1431,15 +1433,33 @@ button:focus {
 /* Remove display limitation to show all paws and bubbles */
 
 @keyframes float {
-    0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.12; }
-    50% { transform: translateY(-15px) rotate(3deg); opacity: 0.18; }
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg); 
+        opacity: 0.3; 
+    }
+    50% { 
+        transform: translateY(-20px) rotate(5deg); 
+        opacity: 0.5; 
+    }
 }
 
 @keyframes twinkle {
-    0%, 100% { opacity: 0.2; transform: scale(1) rotate(0deg); }
-    25% { opacity: 0.28; transform: scale(1.1) rotate(8deg); }
-    50% { opacity: 0.15; transform: scale(0.9) rotate(-5deg); }
-    75% { opacity: 0.25; transform: scale(1.05) rotate(12deg); }
+    0%, 100% { 
+        opacity: 0.4; 
+        transform: scale(1) rotate(0deg); 
+    }
+    25% { 
+        opacity: 0.6; 
+        transform: scale(1.1) rotate(10deg); 
+    }
+    50% { 
+        opacity: 0.3; 
+        transform: scale(0.9) rotate(-8deg); 
+    }
+    75% { 
+        opacity: 0.55; 
+        transform: scale(1.05) rotate(15deg); 
+    }
 }
 
 .hero .container {
