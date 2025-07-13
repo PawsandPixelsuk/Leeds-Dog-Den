@@ -1073,21 +1073,29 @@ h1, h2, h3, h4, h5, h6 {
         text-align: center;
     }
     
-    /* Show 50% more decorative elements on mobile (4-5 bubbles, 4-5 paws) */
+    /* Show many more decorative elements on mobile (8-9 bubbles, 6-7 paws) */
     .bubble-5, .bubble-6, .bubble-7, .bubble-8 {
+        display: block;
+    }
+    
+    .paw-5, .paw-6 {
         display: none;
     }
     
-    .paw-5, .paw-6, .paw-7, .paw-8, .paw-9, .paw-10, .paw-11, .paw-12 {
+    .paw-7, .paw-8, .paw-9, .paw-10 {
+        display: block;
+    }
+    
+    .paw-11, .paw-12 {
         display: none;
     }
     
     /* Scale down decorations to 30% smaller (0.7 original size) */
-    .bubble-1, .bubble-2, .bubble-3, .bubble-4 {
+    .bubble-1, .bubble-2, .bubble-3, .bubble-4, .bubble-5, .bubble-6, .bubble-7, .bubble-8, .bubble-9, .bubble-10, .bubble-11, .bubble-12 {
         transform: scale(0.7);
     }
     
-    .paw-1, .paw-2, .paw-3, .paw-4 {
+    .paw-1, .paw-2, .paw-3, .paw-4, .paw-7, .paw-8, .paw-9, .paw-10 {
         transform: scale(0.7);
     }
 }
@@ -1279,8 +1287,12 @@ h1, h2, h3, h4, h5, h6 {
         opacity: 0.5 !important;
     }
     
-    /* Hide extra paws on desktop to match bubble count (8 each) */
+    /* Hide extra paws and bubbles on desktop to maintain equal count (8 each) */
     .paw-9, .paw-10, .paw-11, .paw-12 {
+        display: none;
+    }
+    
+    .bubble-9, .bubble-10, .bubble-11, .bubble-12 {
         display: none;
     }
     
@@ -1390,6 +1402,12 @@ button:focus {
 .bubble-7 { width: 40px; height: 40px; top: 8%; left: 88%; animation-delay: 3s; }
 .bubble-8 { width: 30px; height: 30px; top: 52%; left: 92%; animation-delay: 5s; }
 
+/* Additional mobile bubbles - well spaced across hero section */
+.bubble-9 { width: 35px; height: 35px; top: 30%; left: 5%; animation-delay: 7s; }
+.bubble-10 { width: 28px; height: 28px; top: 85%; left: 15%; animation-delay: 9s; }
+.bubble-11 { width: 42px; height: 42px; top: 60%; left: 35%; animation-delay: 11s; }
+.bubble-12 { width: 38px; height: 38px; top: 10%; left: 65%; animation-delay: 13s; }
+
 /* Enhanced paw positions for better distribution - desktop gets 8 paws to match 8 bubbles */
 .paw-1 { top: 25%; left: 15%; animation-delay: 0s; }
 .paw-2 { top: 45%; left: 70%; animation-delay: 2s; }
@@ -1399,6 +1417,10 @@ button:focus {
 .paw-6 { top: 55%; left: 72%; animation-delay: 7.5s; }
 .paw-7 { top: 35%; left: 22%; animation-delay: 9s; }
 .paw-8 { top: 75%; left: 42%; animation-delay: 10.5s; }
+
+/* Additional mobile paws - well distributed across hero section */
+.paw-9 { top: 35%; left: 5%; animation-delay: 12s; }
+.paw-10 { top: 85%; left: 30%; animation-delay: 14s; }
 
 /* Background decorations with enhanced visibility and layering */
 .bubble, .paw {
