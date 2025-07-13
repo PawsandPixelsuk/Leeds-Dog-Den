@@ -320,8 +320,16 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.3rem;
     font-weight: 400;
     color: #888;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     line-height: 1.5;
+}
+
+.hero-location {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    line-height: 1.4;
 }
 
 /* Hero Micro Trust Line */
@@ -1069,6 +1077,11 @@ h1, h2, h3, h4, h5, h6 {
     
     .hero-subheading {
         font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .hero-location {
+        font-size: 1rem;
         margin-bottom: 1.5rem;
     }
     
