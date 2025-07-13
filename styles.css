@@ -1394,15 +1394,15 @@ button:focus {
     will-change: transform;
 }
 
-/* Enhanced bubble positions - grid-like distribution to prevent clumping */
-.bubble-1 { width: 35px; height: 35px; top: 10%; left: 5%; animation-delay: 0s; }
-.bubble-2 { width: 28px; height: 28px; top: 10%; left: 50%; animation-delay: 2s; }
-.bubble-3 { width: 32px; height: 32px; top: 10%; left: 90%; animation-delay: 4s; }
-.bubble-4 { width: 30px; height: 30px; top: 35%; left: 15%; animation-delay: 1s; }
-.bubble-5 { width: 25px; height: 25px; top: 35%; left: 65%; animation-delay: 3s; }
-.bubble-6 { width: 38px; height: 38px; top: 60%; left: 5%; animation-delay: 5s; }
-.bubble-7 { width: 33px; height: 33px; top: 60%; left: 45%; animation-delay: 6s; }
-.bubble-8 { width: 29px; height: 29px; top: 60%; left: 85%; animation-delay: 7s; }
+/* Enhanced bubble positions and sizes - mobile optimized for 3 total */
+.bubble-1 { width: 40px; height: 40px; top: 20%; left: 8%; animation-delay: 0s; }
+.bubble-2 { width: 30px; height: 30px; top: 55%; left: 75%; animation-delay: 3s; }
+.bubble-3 { width: 50px; height: 50px; top: 75%; left: 45%; animation-delay: 6s; }
+.bubble-4 { width: 45px; height: 45px; top: 70%; left: 78%; animation-delay: 6s; }
+.bubble-5 { width: 25px; height: 25px; top: 15%; left: 52%; animation-delay: 8s; }
+.bubble-6 { width: 55px; height: 55px; top: 80%; left: 58%; animation-delay: 1s; }
+.bubble-7 { width: 40px; height: 40px; top: 8%; left: 88%; animation-delay: 3s; }
+.bubble-8 { width: 30px; height: 30px; top: 52%; left: 92%; animation-delay: 5s; }
 
 /* Additional mobile bubbles - continue grid pattern */
 .bubble-9 { width: 31px; height: 31px; top: 85%; left: 20%; animation-delay: 8s; }
@@ -1411,7 +1411,7 @@ button:focus {
 .bubble-12 { width: 30px; height: 30px; top: 85%; left: 50%; animation-delay: 11s; }
 
 /* Enhanced paw positions - strategic placement between bubbles */
-.paw-1 { top: 22%; left: 35%; animation-delay: 1.5s; }
+.paw-1 { top: 5%; left: 35%; animation-delay: 1.5s; }
 .paw-2 { top: 47%; left: 25%; animation-delay: 3.5s; }
 .paw-3 { top: 47%; left: 75%; animation-delay: 5.5s; }
 .paw-4 { top: 72%; left: 25%; animation-delay: 7.5s; }
