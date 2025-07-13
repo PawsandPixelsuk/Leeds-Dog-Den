@@ -1269,7 +1269,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Desktop enhancements for better decorative visibility - equal bubbles and paws */
+/* Desktop version - same natural layout as mobile with 6 bubbles and 6 paws */
 @media (min-width: 1024px) {
     .bubble {
         opacity: 0.4 !important;
@@ -1279,19 +1279,29 @@ h1, h2, h3, h4, h5, h6 {
         opacity: 0.5 !important;
     }
     
-    /* Hide extra paws and bubbles on desktop to maintain equal count (8 each) */
-    .paw-9, .paw-10, .paw-11, .paw-12 {
+    /* Hide extra elements to match mobile - 6 bubbles and 6 paws */
+    .bubble-7, .bubble-8, .bubble-9, .bubble-10, .bubble-11, .bubble-12 {
         display: none;
     }
     
-    .bubble-9, .bubble-10, .bubble-11, .bubble-12 {
+    .paw-7, .paw-8, .paw-9, .paw-10, .paw-11, .paw-12 {
         display: none;
     }
     
-    /* Enhanced bubble sizes for desktop */
-    .bubble-1 { width: 70px; height: 70px; }
-    .bubble-3 { width: 90px; height: 90px; }
-    .bubble-6 { width: 80px; height: 80px; }
+    /* Apply same natural positioning as mobile */
+    .bubble-1 { width: 45px; height: 45px; top: 15%; left: 50%; }
+    .bubble-2 { width: 38px; height: 38px; top: 50%; left: 20%; }
+    .bubble-3 { width: 48px; height: 48px; top: 50%; left: 80%; }
+    .bubble-4 { width: 42px; height: 42px; top: 70%; left: 35%; }
+    .bubble-5 { width: 36px; height: 36px; top: 70%; left: 65%; }
+    .bubble-6 { width: 44px; height: 44px; top: 25%; left: 25%; }
+    
+    .paw-1 { top: 8%; left: 12%; }
+    .paw-2 { top: 12%; left: 88%; }
+    .paw-3 { top: 38%; left: 3%; }
+    .paw-4 { top: 32%; left: 92%; }
+    .paw-5 { top: 85%; left: 18%; }
+    .paw-6 { top: 92%; left: 82%; }
 }
 
 /* Floating Mobile CTA */
