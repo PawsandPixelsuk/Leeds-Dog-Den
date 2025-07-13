@@ -632,6 +632,15 @@ h1, h2, h3, h4, h5, h6 {
     gap: 2rem;
 }
 
+/* Mobile-specific service grid improvements */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+}
+
 .service-card {
     background: var(--white);
     padding: 2.5rem 2rem;
@@ -639,6 +648,15 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     box-shadow: var(--shadow);
     transition: var(--transition);
+}
+
+/* Mobile-specific service card improvements */
+@media (max-width: 768px) {
+    .service-card {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+    }
 }
 
 .service-card:hover {
@@ -659,6 +677,16 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2rem;
 }
 
+/* Mobile-specific icon sizing */
+@media (max-width: 768px) {
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
 .service-title {
     font-size: 1.4rem;
     color: var(--text-dark);
@@ -669,6 +697,21 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-light);
     margin-bottom: 1.5rem;
     line-height: 1.6;
+}
+
+/* Mobile-specific text improvements */
+@media (max-width: 768px) {
+    .service-title {
+        font-size: 1.3rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .service-description {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        max-width: none;
+        margin-bottom: 1rem;
+    }
 }
 
 
