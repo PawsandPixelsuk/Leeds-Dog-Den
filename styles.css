@@ -1402,13 +1402,13 @@ button:focus {
 .bubble-11 { width: 34px; height: 34px; top: 35%; left: 85%; animation-delay: 10s; }
 .bubble-12 { width: 30px; height: 30px; top: 85%; left: 50%; animation-delay: 11s; }
 
-/* Mobile paw positions - carefully placed to avoid text and buttons */
-.paw-1 { top: 5%; left: 15%; animation-delay: 1.5s; }
-.paw-2 { top: 5%; left: 85%; animation-delay: 3.5s; }
-.paw-3 { top: 35%; left: 5%; animation-delay: 5.5s; }
-.paw-4 { top: 35%; left: 95%; animation-delay: 7.5s; }
-.paw-5 { top: 90%; left: 15%; animation-delay: 9.5s; }
-.paw-6 { top: 90%; left: 85%; animation-delay: 11.5s; }
+/* Mobile paw positions - naturally staggered to avoid perfect alignment */
+.paw-1 { top: 8%; left: 12%; animation-delay: 1.5s; }
+.paw-2 { top: 12%; left: 88%; animation-delay: 3.5s; }
+.paw-3 { top: 38%; left: 3%; animation-delay: 5.5s; }
+.paw-4 { top: 32%; left: 92%; animation-delay: 7.5s; }
+.paw-5 { top: 85%; left: 18%; animation-delay: 9.5s; }
+.paw-6 { top: 92%; left: 82%; animation-delay: 11.5s; }
 .paw-7 { top: 97%; left: 10%; animation-delay: 13.5s; }
 .paw-8 { top: 97%; left: 85%; animation-delay: 15.5s; }
 
