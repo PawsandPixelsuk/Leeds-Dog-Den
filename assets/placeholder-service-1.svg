@@ -1,0 +1,24 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#faf0e6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5deb3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="300" fill="url(#bg1)"/>
+  
+  <!-- Service station illustration -->
+  <rect x="50" y="100" width="300" height="150" rx="15" fill="#ffffff" stroke="#f4a6cd" stroke-width="3"/>
+  <rect x="70" y="120" width="80" height="60" rx="8" fill="#f4a6cd" opacity="0.3"/>
+  <rect x="170" y="120" width="80" height="60" rx="8" fill="#f4a6cd" opacity="0.3"/>
+  <rect x="270" y="120" width="60" height="60" rx="8" fill="#f4a6cd" opacity="0.3"/>
+  
+  <!-- Equipment icons -->
+  <circle cx="110" cy="150" r="15" fill="#f4a6cd"/>
+  <circle cx="210" cy="150" r="15" fill="#f4a6cd"/>
+  <circle cx="300" cy="150" r="15" fill="#f4a6cd"/>
+  
+  <text x="200" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#4a4a4a">Professional Service Station</text>
+  <text x="200" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#6b6b6b">Replace with your service photos</text>
+</svg>

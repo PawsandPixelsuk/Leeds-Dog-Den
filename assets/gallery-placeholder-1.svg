@@ -1,0 +1,28 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="galleryBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4a6cd;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#f5deb3;stop-opacity:0.5" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="400" fill="url(#galleryBg1)"/>
+  
+  <!-- Pet silhouette -->
+  <g transform="translate(200, 200)">
+    <!-- Dog silhouette -->
+    <ellipse cx="0" cy="20" rx="60" ry="40" fill="#ffffff" opacity="0.8"/>
+    <circle cx="-20" cy="-10" r="25" fill="#ffffff" opacity="0.8"/>
+    <ellipse cx="-35" cy="-25" rx="8" ry="15" fill="#ffffff" opacity="0.8"/>
+    <ellipse cx="-5" cy="-25" rx="8" ry="15" fill="#ffffff" opacity="0.8"/>
+    <ellipse cx="20" cy="0" rx="15" ry="8" fill="#ffffff" opacity="0.8"/>
+  </g>
+  
+  <!-- Camera icon in corner -->
+  <circle cx="350" cy="50" r="25" fill="#ffffff" opacity="0.9"/>
+  <rect x="335" y="40" width="30" height="20" rx="5" fill="#f4a6cd"/>
+  <circle cx="350" cy="50" r="8" fill="#ffffff"/>
+  
+  <text x="200" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#4a4a4a">Before & After Gallery</text>
+  <text x="200" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6b6b6b">Add your work photos here</text>
+</svg>

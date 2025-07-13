@@ -1,11 +1,33 @@
+/* 
+========================================
+Pet Business Website Template - CSS
+Created by Paws & Pixels
+========================================
+
+CUSTOMIZATION GUIDE:
+- Change colors by updating the CSS custom properties below
+- Modify fonts by updating the font-family declarations
+- Adjust spacing by changing padding/margin values
+- All responsive breakpoints are mobile-first
+
+========================================
+*/
+
 /* CSS Custom Properties for consistent theming */
 :root {
-    --primary-color: #f4a6cd; /* Blush pink */
-    --secondary-color: #faf0e6; /* Warm cream */
-    --accent-color: #f5deb3; /* Soft beige */
-    --text-dark: #4a4a4a;
-    --text-light: #6b6b6b;
-    --white: #ffffff;
+    /* 
+    MAIN COLORS - Customize these to match your brand:
+    */
+    --primary-color: #f4a6cd; /* Main brand color (buttons, accents) */
+    --secondary-color: #faf0e6; /* Background color for sections */
+    --accent-color: #f5deb3; /* Secondary accent color */
+    --text-dark: #4a4a4a; /* Main text color */
+    --text-light: #6b6b6b; /* Lighter text for descriptions */
+    --white: #ffffff; /* White backgrounds */
+    
+    /* 
+    SHADOWS AND EFFECTS:
+    */
     --shadow: 0 4px 20px rgba(244, 166, 205, 0.15);
     --shadow-hover: 0 8px 30px rgba(244, 166, 205, 0.25);
     --border-radius: 15px;
