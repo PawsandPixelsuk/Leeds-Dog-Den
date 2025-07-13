@@ -743,9 +743,9 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 600px;
     margin: 0 auto;
     overflow: hidden;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    border: 3px solid var(--light-grey);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: 3px solid var(--secondary-color);
     background: var(--white);
 }
 
@@ -776,6 +776,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 500px;
     object-fit: cover;
     display: block;
+    border-radius: 12px;
+    border-radius: 12px;
 }
 
 .carousel-btn {
@@ -815,6 +817,32 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     gap: 10px;
     margin-top: 20px;
+}
+
+.carousel-caption {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-light);
+    font-style: italic;
+    margin-top: 1.5rem;
+    line-height: 1.5;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mobile carousel improvements */
+@media (max-width: 768px) {
+    .carousel-dots {
+        margin-top: 15px;
+        gap: 8px;
+    }
+    
+    .carousel-caption {
+        font-size: 0.9rem;
+        margin-top: 1rem;
+        padding: 0 1rem;
+    }
 }
 
 .dot {
