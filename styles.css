@@ -1200,17 +1200,17 @@ h1, h2, h3, h4, h5, h6 {
         gap: 1.25rem;
     }
     
-    /* Ensure smooth animations on mobile */
-    .bubble, .paw {
-        animation-duration: 10s;
-    }
-    
+    /* Optimize animations for mobile performance */
     .bubble {
-        opacity: 0.35 !important;
+        animation: float 20s linear infinite;
+        opacity: 0.25 !important;
+        font-size: 16px;
     }
     
     .paw {
-        opacity: 0.45 !important;
+        animation: twinkle 24s linear infinite;
+        opacity: 0.3 !important;
+        font-size: 16px;
     }
     
     .carousel-container {
@@ -1372,57 +1372,57 @@ button:focus {
 .bubble {
     position: absolute;
     border-radius: 50%;
-    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9), rgba(149, 165, 166, 0.6));
-    border: 2px solid rgba(149, 165, 166, 0.5);
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8), rgba(149, 165, 166, 0.4));
+    border: 1px solid rgba(149, 165, 166, 0.3);
     box-shadow: 
-        inset 0 0 20px rgba(255, 255, 255, 0.6),
-        0 4px 15px rgba(149, 165, 166, 0.3);
-    animation: float 12s ease-in-out infinite;
-    opacity: 0.4 !important;
+        inset 0 0 15px rgba(255, 255, 255, 0.5),
+        0 2px 10px rgba(149, 165, 166, 0.2);
+    animation: float 16s linear infinite;
+    opacity: 0.3 !important;
     z-index: 1;
-    will-change: transform, opacity;
+    will-change: transform;
 }
 
 .paw {
     position: absolute;
-    color: rgba(44, 62, 80, 0.5);
-    font-size: 24px;
-    text-shadow: 0 2px 4px rgba(44, 62, 80, 0.3);
-    animation: twinkle 15s ease-in-out infinite;
-    opacity: 0.5 !important;
+    color: rgba(44, 62, 80, 0.4);
+    font-size: 20px;
+    text-shadow: 0 1px 2px rgba(44, 62, 80, 0.2);
+    animation: twinkle 20s linear infinite;
+    opacity: 0.4 !important;
     z-index: 1;
-    will-change: transform, opacity;
+    will-change: transform;
 }
 
-/* Enhanced bubble positions - evenly distributed across mobile hero */
-.bubble-1 { width: 40px; height: 40px; top: 15%; left: 10%; animation-delay: 0s; }
-.bubble-2 { width: 30px; height: 30px; top: 50%; left: 85%; animation-delay: 3s; }
-.bubble-3 { width: 50px; height: 50px; top: 80%; left: 50%; animation-delay: 6s; }
-.bubble-4 { width: 45px; height: 45px; top: 35%; left: 25%; animation-delay: 6s; }
-.bubble-5 { width: 25px; height: 25px; top: 65%; left: 15%; animation-delay: 8s; }
-.bubble-6 { width: 55px; height: 55px; top: 25%; left: 75%; animation-delay: 1s; }
-.bubble-7 { width: 40px; height: 40px; top: 85%; left: 20%; animation-delay: 3s; }
-.bubble-8 { width: 30px; height: 30px; top: 45%; left: 60%; animation-delay: 5s; }
+/* Enhanced bubble positions - grid-like distribution to prevent clumping */
+.bubble-1 { width: 35px; height: 35px; top: 10%; left: 5%; animation-delay: 0s; }
+.bubble-2 { width: 28px; height: 28px; top: 10%; left: 50%; animation-delay: 2s; }
+.bubble-3 { width: 32px; height: 32px; top: 10%; left: 90%; animation-delay: 4s; }
+.bubble-4 { width: 30px; height: 30px; top: 35%; left: 15%; animation-delay: 1s; }
+.bubble-5 { width: 25px; height: 25px; top: 35%; left: 65%; animation-delay: 3s; }
+.bubble-6 { width: 38px; height: 38px; top: 60%; left: 5%; animation-delay: 5s; }
+.bubble-7 { width: 33px; height: 33px; top: 60%; left: 45%; animation-delay: 6s; }
+.bubble-8 { width: 29px; height: 29px; top: 60%; left: 85%; animation-delay: 7s; }
 
-/* Additional mobile bubbles - optimally distributed to avoid clumping */
-.bubble-9 { width: 35px; height: 35px; top: 40%; left: 90%; animation-delay: 7s; }
-.bubble-10 { width: 28px; height: 28px; top: 90%; left: 25%; animation-delay: 9s; }
-.bubble-11 { width: 42px; height: 42px; top: 25%; left: 60%; animation-delay: 11s; }
-.bubble-12 { width: 38px; height: 38px; top: 85%; left: 80%; animation-delay: 13s; }
+/* Additional mobile bubbles - continue grid pattern */
+.bubble-9 { width: 31px; height: 31px; top: 85%; left: 20%; animation-delay: 8s; }
+.bubble-10 { width: 27px; height: 27px; top: 85%; left: 70%; animation-delay: 9s; }
+.bubble-11 { width: 34px; height: 34px; top: 35%; left: 85%; animation-delay: 10s; }
+.bubble-12 { width: 30px; height: 30px; top: 85%; left: 50%; animation-delay: 11s; }
 
-/* Enhanced paw positions - well distributed for mobile and desktop */
-.paw-1 { top: 20%; left: 30%; animation-delay: 0s; }
-.paw-2 { top: 60%; left: 80%; animation-delay: 2s; }
-.paw-3 { top: 85%; left: 35%; animation-delay: 4s; }
-.paw-4 { top: 40%; left: 10%; animation-delay: 4.5s; }
-.paw-5 { top: 12%; left: 78%; animation-delay: 6s; }
-.paw-6 { top: 55%; left: 72%; animation-delay: 7.5s; }
-.paw-7 { top: 25%; left: 65%; animation-delay: 9s; }
-.paw-8 { top: 70%; left: 55%; animation-delay: 10.5s; }
+/* Enhanced paw positions - strategic placement between bubbles */
+.paw-1 { top: 22%; left: 35%; animation-delay: 1.5s; }
+.paw-2 { top: 47%; left: 25%; animation-delay: 3.5s; }
+.paw-3 { top: 47%; left: 75%; animation-delay: 5.5s; }
+.paw-4 { top: 72%; left: 25%; animation-delay: 7.5s; }
+.paw-5 { top: 22%; left: 75%; animation-delay: 9.5s; }
+.paw-6 { top: 72%; left: 65%; animation-delay: 11.5s; }
+.paw-7 { top: 97%; left: 10%; animation-delay: 13.5s; }
+.paw-8 { top: 97%; left: 85%; animation-delay: 15.5s; }
 
-/* Additional mobile paws - well spaced to avoid any clustering */
-.paw-9 { top: 10%; left: 85%; animation-delay: 12s; }
-.paw-10 { top: 95%; left: 75%; animation-delay: 14s; }
+/* Additional mobile paws - fill remaining strategic spots */
+.paw-9 { top: 5%; left: 25%; animation-delay: 17.5s; }
+.paw-10 { top: 5%; left: 75%; animation-delay: 19.5s; }
 
 /* Background decorations with enhanced visibility and layering */
 .bubble, .paw {
@@ -1434,11 +1434,15 @@ button:focus {
 
 @keyframes float {
     0%, 100% { 
-        transform: translateY(0px) rotate(0deg); 
+        transform: translateY(0px) translateX(0px); 
         opacity: 0.3; 
     }
-    50% { 
-        transform: translateY(-20px) rotate(5deg); 
+    33% { 
+        transform: translateY(-8px) translateX(3px); 
+        opacity: 0.4; 
+    }
+    66% { 
+        transform: translateY(-12px) translateX(-2px); 
         opacity: 0.5; 
     }
 }
@@ -1446,19 +1450,11 @@ button:focus {
 @keyframes twinkle {
     0%, 100% { 
         opacity: 0.4; 
-        transform: scale(1) rotate(0deg); 
-    }
-    25% { 
-        opacity: 0.6; 
-        transform: scale(1.1) rotate(10deg); 
+        transform: scale(1); 
     }
     50% { 
-        opacity: 0.3; 
-        transform: scale(0.9) rotate(-8deg); 
-    }
-    75% { 
-        opacity: 0.55; 
-        transform: scale(1.05) rotate(15deg); 
+        opacity: 0.6; 
+        transform: scale(1.1); 
     }
 }
 
