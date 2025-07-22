@@ -628,23 +628,23 @@ h1, h2, h3, h4, h5, h6 {
 /* Desktop: Individual service card colors - diagonal blue pattern */
 @media (min-width: 769px) {
     .services-grid .service-card:nth-child(1) {
-        background: linear-gradient(135deg, #0066FF, #3399FF) !important; /* BRIGHT BLUE - top left - DEBUG */
-        border: 3px solid #0066FF !important;
+        background: linear-gradient(135deg, #E6F3FF, #F0F8FF) !important; /* Light blue - top left */
+        border-color: #E6F3FF !important;
     }
 
     .services-grid .service-card:nth-child(2) {
-        background: linear-gradient(135deg, #FFD700, #FFEB3B) !important; /* BRIGHT YELLOW - top right - DEBUG */
-        border: 3px solid #FFD700 !important;
+        background: linear-gradient(135deg, #FFF9E6, #FFFEF5) !important; /* Light yellow - top right */
+        border-color: #FFF9E6 !important;
     }
 
     .services-grid .service-card:nth-child(3) {
-        background: linear-gradient(135deg, #FFD700, #FFEB3B) !important; /* BRIGHT YELLOW - bottom left - DEBUG */
-        border: 3px solid #FFD700 !important;
+        background: linear-gradient(135deg, #FFF9E6, #FFFEF5) !important; /* Light yellow - bottom left */
+        border-color: #FFF9E6 !important;
     }
 
     .services-grid .service-card:nth-child(4) {
-        background: linear-gradient(135deg, #0066FF, #3399FF) !important; /* BRIGHT BLUE - bottom right - DEBUG */
-        border: 3px solid #0066FF !important;
+        background: linear-gradient(135deg, #E6F3FF, #F0F8FF) !important; /* Light blue - bottom right */
+        border-color: #E6F3FF !important;
     }
 }
 
