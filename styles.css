@@ -16,22 +16,22 @@ CUSTOMIZATION GUIDE:
 /* CSS Custom Properties for consistent theming */
 :root {
     /* 
-    SOFT PASTEL COLORS - Gentle, warm palette:
+    VERY SOFT PASTEL COLORS - Ultra gentle, warm palette:
     */
-    --primary-color: #FFB6C1; /* Light pink for buttons and accents */
-    --secondary-color: #FFF8DC; /* Soft cream/cornsilk background */
-    --accent-color: #FFEAA7; /* Soft yellow accent */
-    --text-dark: #6B5B95; /* Soft purple-grey for text readability */
-    --text-light: #A29BFE; /* Light blue for descriptions */
-    --white: #FFFEF7; /* Warm white backgrounds */
-    --light-grey: #E8F4FD; /* Very light blue */
-    --medium-grey: #FDCB6E; /* Soft orange for borders */
+    --primary-color: #F8E8E8; /* Ultra light pink for buttons and accents */
+    --secondary-color: #FFFEF9; /* Soft cream background */
+    --accent-color: #FEF7E8; /* Very soft yellow accent */
+    --text-dark: #8B7B95; /* Soft purple-grey for text readability */
+    --text-light: #A0A8C8; /* Very light blue for descriptions */
+    --white: #FFFFFE; /* Pure white backgrounds */
+    --light-grey: #F5F9FE; /* Ultra light blue */
+    --medium-grey: #FEF5E8; /* Very soft orange for borders */
     
-    /* Additional pastel colors for variety */
-    --pastel-pink: #FFB6C1;
-    --pastel-yellow: #FFEAA7;
-    --pastel-orange: #FDCB6E;
-    --pastel-blue: #A8E6CF;
+    /* Additional ultra-pastel colors for variety */
+    --pastel-pink: #F8E8E8;
+    --pastel-yellow: #FEF7E8;
+    --pastel-orange: #FEF5E8;
+    --pastel-blue: #F0F8F5;
     
     /* 
     SHADOWS AND EFFECTS:
@@ -295,7 +295,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section */
 .hero {
     padding: 140px 0 100px;
-    background: linear-gradient(135deg, var(--pastel-pink) 0%, var(--pastel-yellow) 50%, var(--pastel-blue) 100%);
+    background: linear-gradient(135deg, var(--pastel-pink) 0%, var(--pastel-blue) 100%);
     min-height: 90vh;
     display: flex;
     align-items: center;
@@ -658,25 +658,25 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid transparent;
 }
 
-/* Individual service card colors */
+/* Individual service card colors - ultra soft pastels */
 .service-card:nth-child(1) {
-    background: linear-gradient(135deg, #FFB6C1, #FFC0CB); /* Pink */
-    border-color: #FFB6C1;
+    background: linear-gradient(135deg, #F8E8E8, #FAF0F0); /* Ultra light pink */
+    border-color: #F8E8E8;
 }
 
 .service-card:nth-child(2) {
-    background: linear-gradient(135deg, #FFEAA7, #FFF5B4); /* Yellow */
-    border-color: #FFEAA7;
+    background: linear-gradient(135deg, #FEF7E8, #FFFCF5); /* Ultra light yellow */
+    border-color: #FEF7E8;
 }
 
 .service-card:nth-child(3) {
-    background: linear-gradient(135deg, #FDCB6E, #FFD93D); /* Orange */
-    border-color: #FDCB6E;
+    background: linear-gradient(135deg, #FEF5E8, #FFF9F0); /* Ultra light orange */
+    border-color: #FEF5E8;
 }
 
 .service-card:nth-child(4) {
-    background: linear-gradient(135deg, #A8E6CF, #B8F2E6); /* Light Blue */
-    border-color: #A8E6CF;
+    background: linear-gradient(135deg, #F0F8F5, #F5FBF8); /* Ultra light blue-green */
+    border-color: #F0F8F5;
 }
 
 /* Mobile-specific service card improvements */
