@@ -626,24 +626,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Desktop: Individual service card colors - diagonal blue pattern */
-.service-card:nth-child(1) {
-    background: linear-gradient(135deg, #E6F3FF, #F0F8FF); /* Light blue - top left */
-    border-color: #E6F3FF;
-}
+@media (min-width: 769px) {
+    .service-card:nth-child(1) {
+        background: linear-gradient(135deg, #E6F3FF, #F0F8FF) !important; /* Light blue - top left */
+        border-color: #E6F3FF !important;
+    }
 
-.service-card:nth-child(2) {
-    background: linear-gradient(135deg, #FFF9E6, #FFFEF5); /* Light yellow - top right */
-    border-color: #FFF9E6;
-}
+    .service-card:nth-child(2) {
+        background: linear-gradient(135deg, #FFF9E6, #FFFEF5) !important; /* Light yellow - top right */
+        border-color: #FFF9E6 !important;
+    }
 
-.service-card:nth-child(3) {
-    background: linear-gradient(135deg, #E6F3FF, #F0F8FF); /* Light blue - bottom left */
-    border-color: #E6F3FF;
-}
+    .service-card:nth-child(3) {
+        background: linear-gradient(135deg, #E6F3FF, #F0F8FF) !important; /* Light blue - bottom left */
+        border-color: #E6F3FF !important;
+    }
 
-.service-card:nth-child(4) {
-    background: linear-gradient(135deg, #FFF9E6, #FFFEF5); /* Light yellow - bottom right */
-    border-color: #FFF9E6;
+    .service-card:nth-child(4) {
+        background: linear-gradient(135deg, #FFF9E6, #FFFEF5) !important; /* Light yellow - bottom right */
+        border-color: #FFF9E6 !important;
+    }
 }
 
 /* Mobile-specific service card improvements */
