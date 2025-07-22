@@ -624,7 +624,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid transparent;
 }
 
-/* Individual service card colors - blue corners, yellow middle */
+/* Desktop: Individual service card colors - diagonal blue pattern */
 .service-card:nth-child(1) {
     background: linear-gradient(135deg, #E6F3FF, #F0F8FF); /* Light blue - top left */
     border-color: #E6F3FF;
@@ -1276,14 +1276,32 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
     }
     
-    /* Mobile: Service cards reorder to blue-yellow-blue-yellow */
-    .service-card:nth-child(1) { order: 1; } /* Dog Day Care - blue - top left */
-    .service-card:nth-child(2) { order: 2; } /* Dog Walks - yellow - top right */
-    .service-card:nth-child(3) { order: 4; } /* Dog Training - blue - bottom right */
-    .service-card:nth-child(4) { order: 3; } /* Natural Treats - yellow - bottom left */
+    /* Mobile: Service cards reorder to blue-yellow-blue-yellow AND recolor */
+    .service-card:nth-child(1) { 
+        order: 1; 
+        background: linear-gradient(135deg, #E6F3FF, #F0F8FF) !important; /* Blue - top */
+        border-color: #E6F3FF !important;
+    } 
+    .service-card:nth-child(2) { 
+        order: 2; 
+        background: linear-gradient(135deg, #FFF9E6, #FFFEF5) !important; /* Yellow - second */
+        border-color: #FFF9E6 !important;
+    } 
+    .service-card:nth-child(3) { 
+        order: 3; 
+        background: linear-gradient(135deg, #E6F3FF, #F0F8FF) !important; /* Blue - third */
+        border-color: #E6F3FF !important;
+    } 
+    .service-card:nth-child(4) { 
+        order: 4; 
+        background: linear-gradient(135deg, #FFF9E6, #FFFEF5) !important; /* Yellow - fourth */
+        border-color: #FFF9E6 !important;
+    }
     
     .benefits-grid-hero {
         grid-template-columns: 1fr;
