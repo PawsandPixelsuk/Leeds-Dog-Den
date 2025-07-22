@@ -1276,11 +1276,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 2rem;
     }
     
-    .services-grid {
-        grid-template-columns: 1fr;
-        max-width: 400px;
-        margin: 0 auto;
-    }
+
     
     /* Mobile: Service cards reorder to blue-yellow-blue-yellow AND recolor */
     .service-card:nth-child(1) { 
