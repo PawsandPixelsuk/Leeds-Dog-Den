@@ -16,22 +16,22 @@ CUSTOMIZATION GUIDE:
 /* CSS Custom Properties for consistent theming */
 :root {
     /* 
-    VERY SOFT PASTEL COLORS - Ultra gentle, warm palette:
+    LIGHT BLUE AND YELLOW PASTEL THEME:
     */
-    --primary-color: #F8E8E8; /* Ultra light pink for buttons and accents */
+    --primary-color: #E6F3FF; /* Ultra light blue for buttons and accents */
     --secondary-color: #FFFEF9; /* Soft cream background */
-    --accent-color: #FEF7E8; /* Very soft yellow accent */
-    --text-dark: #8B7B95; /* Soft purple-grey for text readability */
-    --text-light: #A0A8C8; /* Very light blue for descriptions */
+    --accent-color: #FFF9E6; /* Very soft yellow accent */
+    --text-dark: #4A5568; /* Dark grey for text readability */
+    --text-light: #718096; /* Medium grey for descriptions */
     --white: #FFFFFE; /* Pure white backgrounds */
-    --light-grey: #F5F9FE; /* Ultra light blue */
-    --medium-grey: #FEF5E8; /* Very soft orange for borders */
+    --light-grey: #F0F8FF; /* Ultra light blue */
+    --medium-grey: #FFF9E6; /* Very soft yellow for borders */
     
-    /* Additional ultra-pastel colors for variety */
-    --pastel-pink: #F8E8E8;
-    --pastel-yellow: #FEF7E8;
-    --pastel-orange: #FEF5E8;
-    --pastel-blue: #F0F8F5;
+    /* Additional light blue and yellow pastels */
+    --pastel-blue: #E6F3FF;
+    --pastel-yellow: #FFF9E6;
+    --pastel-light-blue: #F0F8FF;
+    --pastel-cream-yellow: #FFFEF5;
     
     /* 
     SHADOWS AND EFFECTS:
@@ -296,7 +296,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section */
 .hero {
     padding: 140px 0 100px;
-    background: linear-gradient(135deg, #FFD1DC 0%, #B8F2E6 100%);
+    background: linear-gradient(135deg, #E6F3FF 0%, #FFF9E6 100%);
     min-height: 90vh;
     display: flex;
     align-items: center;
@@ -393,7 +393,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cta-button.primary {
-    background: linear-gradient(135deg, #FF9A9A, #FFB6C1);
+    background: linear-gradient(135deg, #87CEEB, #B8D4F0);
     color: #2D3748;
     font-weight: 600;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -413,7 +413,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Why Choose Us Section */
 .why-choose-us {
     padding: 80px 0;
-    background: linear-gradient(135deg, var(--pastel-yellow) 0%, var(--pastel-orange) 100%);
+    background: linear-gradient(135deg, var(--pastel-yellow) 0%, var(--pastel-blue) 100%);
     text-align: center;
 }
 
@@ -455,12 +455,12 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #FFE4E6, #FFF0F3);
+    background: linear-gradient(135deg, #E6F3FF, #F0F8FF);
     border-radius: 50%;
     margin: 0 auto 1.5rem;
-    color: #E53E3E;
+    color: #4682B4;
     font-size: 1.5rem;
-    border: 2px solid #FFB6C1;
+    border: 2px solid #87CEEB;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -487,13 +487,13 @@ h1, h2, h3, h4, h5, h6 {
 .cta-button.secondary {
     background: rgba(255, 255, 255, 0.9);
     color: #2D3748;
-    border: 2px solid #FF9A9A;
+    border: 2px solid #87CEEB;
     font-weight: 600;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .cta-button.secondary:hover {
-    background: linear-gradient(135deg, #FF9A9A, #FFB6C1);
+    background: linear-gradient(135deg, #87CEEB, #B8D4F0);
     color: #2D3748;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
@@ -551,15 +551,15 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #FFE4E6, #FFF0F3);
+    background: linear-gradient(135deg, #E6F3FF, #F0F8FF);
     border-radius: 50%;
     margin: 0 auto 1rem;
-    border: 2px solid #FFB6C1;
+    border: 2px solid #87CEEB;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .benefit-icon i {
-    color: #E53E3E;
+    color: #4682B4;
     font-size: 1.5rem;
 }
 
@@ -669,25 +669,25 @@ h1, h2, h3, h4, h5, h6 {
     border: 2px solid transparent;
 }
 
-/* Individual service card colors - ultra soft pastels */
+/* Individual service card colors - light blue and yellow theme */
 .service-card:nth-child(1) {
-    background: linear-gradient(135deg, #F8E8E8, #FAF0F0); /* Ultra light pink */
-    border-color: #F8E8E8;
+    background: linear-gradient(135deg, #E6F3FF, #F0F8FF); /* Light blue */
+    border-color: #E6F3FF;
 }
 
 .service-card:nth-child(2) {
-    background: linear-gradient(135deg, #FEF7E8, #FFFCF5); /* Ultra light yellow */
-    border-color: #FEF7E8;
+    background: linear-gradient(135deg, #FFF9E6, #FFFEF5); /* Light yellow */
+    border-color: #FFF9E6;
 }
 
 .service-card:nth-child(3) {
-    background: linear-gradient(135deg, #FEF5E8, #FFF9F0); /* Ultra light orange */
-    border-color: #FEF5E8;
+    background: linear-gradient(135deg, #E6F3FF, #F0F8FF); /* Light blue */
+    border-color: #E6F3FF;
 }
 
 .service-card:nth-child(4) {
-    background: linear-gradient(135deg, #F0F8F5, #F5FBF8); /* Ultra light blue-green */
-    border-color: #F0F8F5;
+    background: linear-gradient(135deg, #FFF9E6, #FFFEF5); /* Light yellow */
+    border-color: #FFF9E6;
 }
 
 /* Mobile-specific service card improvements */
@@ -720,7 +720,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #2D3748;
     font-size: 2rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    border: 2px solid rgba(255, 154, 154, 0.3);
+    border: 2px solid rgba(135, 206, 235, 0.3);
 }
 
 /* Mobile-specific icon sizing */
@@ -903,7 +903,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Book Now Section */
 .book-now {
     padding: 100px 0;
-    background: linear-gradient(135deg, var(--pastel-pink) 0%, var(--pastel-blue) 100%);
+    background: linear-gradient(135deg, var(--pastel-blue) 0%, var(--pastel-yellow) 100%);
     color: var(--text-dark);
     text-align: center;
 }
@@ -945,7 +945,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Contact Section */
 .contact {
     padding: 80px 0;
-    background: linear-gradient(135deg, var(--light-grey) 0%, var(--pastel-yellow) 100%);
+    background: linear-gradient(135deg, var(--pastel-light-blue) 0%, var(--pastel-yellow) 100%);
 }
 
 .contact-grid {
@@ -976,15 +976,15 @@ h1, h2, h3, h4, h5, h6 {
 .contact-icon {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #FFE4E6, #FFF0F3);
+    background: linear-gradient(135deg, #E6F3FF, #F0F8FF);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #E53E3E;
+    color: #4682B4;
     font-size: 1.2rem;
     flex-shrink: 0;
-    border: 2px solid #FFB6C1;
+    border: 2px solid #87CEEB;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -1568,13 +1568,13 @@ button:focus {
 
 .floating-paw {
     position: absolute;
-    color: #FF9A9A;
+    color: #B8D4F0;
     font-size: 1.5rem;
     animation: pawFloat 15s ease-in-out infinite;
-    opacity: 0.6 !important;
+    opacity: 0.4 !important;
     z-index: 1;
     will-change: transform;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
 }
 
 /* Paw positioning */
