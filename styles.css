@@ -637,13 +637,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .service-card:nth-child(3) {
-    background: linear-gradient(135deg, #FFF9E6, #FFFEF5); /* Light yellow - bottom left */
-    border-color: #FFF9E6;
+    background: linear-gradient(135deg, #E6F3FF, #F0F8FF); /* Light blue - bottom left */
+    border-color: #E6F3FF;
 }
 
 .service-card:nth-child(4) {
-    background: linear-gradient(135deg, #E6F3FF, #F0F8FF); /* Light blue - bottom right */
-    border-color: #E6F3FF;
+    background: linear-gradient(135deg, #FFF9E6, #FFFEF5); /* Light yellow - bottom right */
+    border-color: #FFF9E6;
 }
 
 /* Mobile-specific service card improvements */
