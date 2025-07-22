@@ -237,6 +237,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     color: var(--text-dark);
     margin: 0;
+    line-height: 1.1;
+    white-space: nowrap;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -909,8 +911,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .book-now .section-title {
-    color: var(--white);
-    font-size: 2.8rem;
+    color: #2D3748;
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, #4682B4, #87CEEB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .book-subtitle {
@@ -1125,6 +1134,13 @@ h1, h2, h3, h4, h5, h6 {
     
     .business-name {
         font-size: 1.35rem;
+        line-height: 1.2;
+    }
+    
+    .logo-section {
+        gap: 0.5rem;
+        flex-wrap: nowrap;
+        min-width: 0;
     }
     
     .mobile-menu-toggle {
@@ -1308,6 +1324,12 @@ h1, h2, h3, h4, h5, h6 {
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    
+    /* Mobile: Service cards reorder to blue-yellow-blue-yellow */
+    .service-card:nth-child(1) { order: 1; } /* Dog Day Care - blue - top left */
+    .service-card:nth-child(2) { order: 2; } /* Dog Walks - yellow - top right */
+    .service-card:nth-child(3) { order: 4; } /* Dog Training - blue - bottom right */
+    .service-card:nth-child(4) { order: 3; } /* Natural Treats - yellow - bottom left */
     
     .benefits-grid-hero {
         grid-template-columns: 1fr;
