@@ -267,7 +267,18 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 800px;
 }
 
-/* Hero logo removed - keeping only navbar logo */
+/* Hero logo styling */
+.hero-logo {
+    margin-bottom: 2rem;
+}
+
+.hero-logo-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
 
 .hero-title, .hero-content h1 {
     font-size: 3.5rem;
