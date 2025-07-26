@@ -278,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: contain;
     background: transparent;
     border: none;
-    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.3));
 }
 
 /* Mobile: Same size as desktop with drop shadow */
@@ -286,7 +286,7 @@ h1, h2, h3, h4, h5, h6 {
     .hero-logo-image {
         width: 450px;
         height: 450px;
-        filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.15));
+        filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.3));
     }
 }
 
