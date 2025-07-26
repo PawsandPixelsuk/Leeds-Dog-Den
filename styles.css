@@ -284,8 +284,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Mobile: Smaller logo with bottom-right shadow only */
 @media (max-width: 768px) {
     .hero-logo-image {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         filter: drop-shadow(4px 6px 15px rgba(0, 0, 0, 0.3));
     }
 }
