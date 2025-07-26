@@ -273,20 +273,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-logo-image {
-    width: 450px; /* 2.5x bigger than 180px */
+    width: 450px;
     height: 450px;
-    object-fit: contain; /* Changed from cover to contain to avoid cropping */
-    background: transparent; /* Ensure no background */
+    object-fit: contain;
+    background: transparent;
     border: none;
-    /* Removed all shadows and backgrounds */
+    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.15));
 }
 
-/* Mobile: Much smaller logo */
+/* Mobile: Same size as desktop with drop shadow */
 @media (max-width: 768px) {
     .hero-logo-image {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%; /* Keep circular on mobile */
+        width: 450px;
+        height: 450px;
+        filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.15));
     }
 }
 
