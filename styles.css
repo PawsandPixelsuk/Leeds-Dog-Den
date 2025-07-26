@@ -281,12 +281,16 @@ h1, h2, h3, h4, h5, h6 {
     filter: drop-shadow(8px 12px 25px rgba(0, 0, 0, 0.3));
 }
 
-/* Mobile: Smaller logo with bottom-right shadow only */
+/* Mobile: Much smaller logo to fit screen properly */
 @media (max-width: 768px) {
     .hero-logo-image {
-        width: 300px;
-        height: 300px;
-        filter: drop-shadow(4px 6px 15px rgba(0, 0, 0, 0.3));
+        width: 150px;
+        height: 150px;
+        filter: drop-shadow(3px 4px 10px rgba(0, 0, 0, 0.3));
+    }
+    
+    .hero-logo {
+        margin-bottom: 1rem;
     }
 }
 
